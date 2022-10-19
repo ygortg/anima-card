@@ -9,10 +9,10 @@ export default function CardInformacoes(props) {
   return(
     <div className="CardInformacoes">
         <h3>
-          informação sobre o {props.tipoAnimal == "cachorro" ? nomeAnimalCachorro : nomeAnimalGato}
+          informação sobre o {props.tipoAnimal === "cachorro" ? nomeAnimalCachorro : nomeAnimalGato}
         </h3>
         <p>
-          {props.tipoAnimal == "cachorro" ? informacaoCachorro : informacaoGato}
+          {props.tipoAnimal === "cachorro" ? informacaoCachorro : informacaoGato}
         </p>
     </div>
   );
